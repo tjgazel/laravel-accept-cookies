@@ -6,7 +6,7 @@
 
 <br>
 
-<img src="Screenshot.png" />
+<img src="Screenshot.png" width="100%" height="auto" />
 
 <br>
 
@@ -15,6 +15,13 @@
     - JQuery 3
 - [installation and configuration](#instalation)
 - [Tanks](#tanks)
+
+<br>
+
+> See examples in: <br>
+> https://alfaunipac.com.br <br>
+> https://unipacto.com.br <br>
+> https://faculdadealfa.com.br <br>
 
 <a name="instalation"></a>
 
