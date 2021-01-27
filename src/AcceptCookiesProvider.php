@@ -21,10 +21,10 @@ class AcceptCookiesProvider extends ServiceProvider
     public function boot()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'accept-cookies');
-        $this->publishes([__DIR__ . '/../config/config.php' => config_path('accept-cookies.php')], 'accept-cookies-config');
+        $this->publishes([__DIR__ . '/../config/config.php' => config_path('accept-cookies.php')], 'accept-cookies:config');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'accept-cookies');
-        $this->publishes([__DIR__ . '/../resources/views' => base_path('resources/views/vendor/accept-cookies')], 'accept-cookies-views');
+        $this->publishes([__DIR__ . '/../resources/views' => base_path('resources/views/vendor/accept-cookies')], 'accept-cookies:views');
     }
 
     /**

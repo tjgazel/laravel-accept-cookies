@@ -25,7 +25,7 @@ discover the provider and the alias.
 
 <br>
 
-**2)** Run `php artisan vendor:publish --provider="TJGazel\Laravel\AcceptCookies\AcceptCookiesProvider" --tag="config"`
+**2)** Run `php artisan vendor:publish --provider="TJGazel\Laravel\AcceptCookies\AcceptCookiesProvider" --tag="accept-cookies:config"`
 to publish the config file in `config/accept-cookies.php`. <br>
 
 ```php
@@ -106,7 +106,7 @@ Route::get('/', function() {
 <br>
 
 **5)** *Optional:*
-Run `php artisan vendor:publish --provider="TJGazel\Laravel\AcceptCookies\AcceptCookiesProvider" --tag="template"`
+Run `php artisan vendor:publish --provider="TJGazel\Laravel\AcceptCookies\AcceptCookiesProvider" --tag="accept-cookies:views"`
 to publish the template view. Modify the published template located
 at `resources/views/vendor/accept-cookies/template.php` to your liking.
 
