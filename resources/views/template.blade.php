@@ -31,7 +31,7 @@
           $.post(url, {accept: '1'})
             .then(resp => {
               if (resp.success) {
-                $('cookies-info-b4').addClass('d-none');
+                $('.cookies-info-b4').addClass('d-none');
               }
             })
             .catch(error => console.log(error));
@@ -41,7 +41,7 @@
           $.post(url, {accept: '0'})
             .then(resp => {
               if (resp.success) {
-                $('cookies-info-b4').addClass('d-none');
+                $('.cookies-info-b4').addClass('d-none');
               }
             })
             .catch(error => console.log(error));
