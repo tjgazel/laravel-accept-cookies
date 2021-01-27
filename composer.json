@@ -1,0 +1,40 @@
+{
+    "name": "tjgazel/laravel-accept-cookies",
+    "description": "Pop-up cookie acceptance terms for Laravel 5.5+",
+    "keywords": ["laravel", "cookies", "php"],
+    "homepage": "https://github.com/tjgazel/laravel-accept-cookies",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Talles Gazel",
+            "email": "tjgazel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.5",
+        "illuminate/http": "^5.5",
+        "illuminate/session": "^5.5.0",
+        "illuminate/routing": "^5.5",
+        "illuminate/contracts": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TJGazel\\Laravel\\AcceptCookies\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TJGazel\\Laravel\\AcceptCookies\\AcceptCookiesProvider"
+            ],
+            "aliases": {
+                "AcceptCookies": "TJGazel\\Laravel\\AcceptCookies\\Facades\\AcceptCookies"
+            }
+        }
+    }
+}
