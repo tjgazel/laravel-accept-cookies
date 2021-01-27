@@ -28,7 +28,7 @@
         const url = '/{{config('accept-cookies.route.prefix')}}{{config('accept-cookies.route.route.url')}}';
 
         $('.cookies-info-btn1').click(function () {
-          $.post(url, {aceite: '1'})
+          $.post(url, {accept: '1'})
             .then(resp => {
               if (resp.success) {
                 $('cookies-info-b4').addClass('d-none');
@@ -38,7 +38,7 @@
         });
 
         $('.cookies-info-btn2').click(function () {
-          $.post(url, {aceite: '0'})
+          $.post(url, {accept: '0'})
             .then(resp => {
               if (resp.success) {
                 $('cookies-info-b4').addClass('d-none');
