@@ -83,13 +83,16 @@ Route::get('/', function() {
 
 <br>
 
-**4)** 1 - Include `@stack('js')` after jquery and boostrap scripts.  
-2 - Include`@include('accept-cookies::template')` somewhere in your template.
+**4)** 1 - Include `<meta name="csrf-token" content="{{ csrf_token() }}">`.
+2 - Include `@stack('js')` after jquery and boostrap scripts.  
+3 - Include`@include('accept-cookies::template')` somewhere in your template.
 
 ```html
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" type="text/css" href="/css/app.css">
 </head>
 <body>

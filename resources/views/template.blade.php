@@ -27,6 +27,12 @@
       $(document).ready(function () {
         const url = '/{{config('accept-cookies.route.prefix')}}{{config('accept-cookies.route.route.url')}}';
 
+        $.ajaxSetup({
+          headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+        });
+
         $('.cookies-info-btn1').click(function () {
           $.post(url, {accept: '1'})
             .then(resp => {
